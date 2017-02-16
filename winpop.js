@@ -59,6 +59,7 @@
                   that.remove();
                   that.okclick();
               })
+              //只通过事件委托绑定一次，如果用on绑定，因为doument无法删除，导致事件一直存在
              /* $(document).one("click","#btn-ok",function(){
                   that.remove();
                   that.okclick();
