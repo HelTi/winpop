@@ -55,21 +55,30 @@
         },
         eventclick:function(){
               var that=this;
-              $(document).one("click","#btn-ok",function(){
-
+              that.$wraper.find("#btn-ok").on("click",function(){
                   that.remove();
                   that.okclick();
+              })
+             /* $(document).one("click","#btn-ok",function(){
+                  that.remove();
+                  that.okclick();
+              });*/
 
-              });
-              $(document).one("click",".btn-ok",function(){
+               that.$wraper.find(".btn-ok").on("click",function(){
+                  that.remove();
+                  that.okclick();
+              })
+             /* $(document).one("click",".btn-ok",function(){
 
                   that.remove();
                   that.okclick()
 
-              });
-              $(document).one("click",".btn-cancel",function(){
+              });*/
+               that.$wraper.find(".btn-cancel").on("click",function(){
                   that.remove();
+                  
               })
+             
         },
         alertpop:function(){
             var $palert=$(htmls.palert);
