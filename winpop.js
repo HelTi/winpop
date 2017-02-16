@@ -63,6 +63,7 @@
              /* $(document).one("click","#btn-ok",function(){
                   that.remove();
                   that.okclick();
+                  
               });*/
 
                that.$wraper.find(".btn-ok").on("click",function(){
