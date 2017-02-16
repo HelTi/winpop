@@ -10,5 +10,12 @@ var win = new winpop({
 },function(){
     console.log("回调函数");
 });
+var btn=document.getElementById("open");
 
+    btn.addEventListener('click',function(){
+        win.alertpop();
+    })
+    $("#alert").on('click',function(){
+        win.confimpop();
+    })
 ```
