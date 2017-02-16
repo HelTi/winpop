@@ -1,7 +1,7 @@
 ##### A simple pop-up box component
 
 ![](b.gif)
->使用方法：语法 new(opt,function(){})
+>使用方法：语法 new winpop(opt,function(){})
 ```javascript
 //例：
 var win = new winpop({
